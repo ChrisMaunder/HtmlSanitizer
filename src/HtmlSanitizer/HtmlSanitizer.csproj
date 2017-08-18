@@ -22,7 +22,7 @@
 	<AppConfig Condition="'$(TargetFramework)' == 'net40'">app.net40.config</AppConfig>
 	<AutoUnifyAssemblyReferences Condition="'$(TargetFramework)' == 'net40'">false</AutoUnifyAssemblyReferences>
 	<RootNamespace>Ganss.XSS</RootNamespace>
-	<Version>3.4.156-CP.2</Version>
+	<Version>3.4.157-CP</Version>
 	<PackageReleaseNotes>Removed .NetStandard2.0 support due to VS 15.3 breaking changes</PackageReleaseNotes>
   </PropertyGroup>
 
