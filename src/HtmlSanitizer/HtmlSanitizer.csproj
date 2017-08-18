@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Cleans HTML from constructs that can be used for cross site scripting (XSS)</Description>
+    <Description>Cleans HTML from constructs that can be used for cross site scripting (XSS). This version created for CodeProject to ensure it's not tied to a specific AngleSharp version.</Description>
     <Copyright>Copyright 2013-2017 Michael Ganss</Copyright>
     <AssemblyTitle>HtmlSanitizer</AssemblyTitle>
     <VersionPrefix>1.0.0-VERSION</VersionPrefix>
     <Authors>Michael Ganss</Authors>
-    <TargetFrameworks>net40;net45;netstandard1.3</TargetFrameworks>
+    <TargetFrameworks>net462</TargetFrameworks>
     <AssemblyName>HtmlSanitizer</AssemblyName>
     <AssemblyOriginatorKeyFile>HtmlSanitizer.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
@@ -22,6 +22,8 @@
 	<AppConfig Condition="'$(TargetFramework)' == 'net40'">app.net40.config</AppConfig>
 	<AutoUnifyAssemblyReferences Condition="'$(TargetFramework)' == 'net40'">false</AutoUnifyAssemblyReferences>
 	<RootNamespace>Ganss.XSS</RootNamespace>
+	<Version>3.4.156-CP.2</Version>
+	<PackageReleaseNotes>Removed .NetStandard2.0 support due to VS 15.3 breaking changes</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
